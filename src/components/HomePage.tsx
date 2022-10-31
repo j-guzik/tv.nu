@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { getAllPrograms } from "../helpers/data";
 import { TVProgram } from "../models/models";
+import ProgramsList from "./ProgramsList/ProgramsList";
 
 const HomePage = () => {
   const [allPrograms, setAllPrograms] = useState<Array<TVProgram>>([]);
@@ -17,9 +18,7 @@ const HomePage = () => {
 
   return (
     <div>
-      {allPrograms.map((program) => (
-        <div>{program.title}</div>
-      ))}
+      <ProgramsList programs={allPrograms}></ProgramsList>
     </div>
   );
 };
