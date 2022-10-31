@@ -5,8 +5,8 @@ import { FetchProgramsParameters } from "../../models/models";
 
 const API_URL = "https://stage-api-frontend.tv.nu/programs?";
 
-async function fetchApi<T>(pathname: string, filter?: string, limit?: number) {
-  const response = await fetch(`${pathname}${filter}${limit}`);
+async function fetchApi<T>(pathname: string, filter?: string) {
+  const response = await fetch(`${pathname}${filter}`);
 
   if (response.status === 404) {
     throw new NotFoundError();
@@ -19,10 +19,10 @@ async function fetchApi<T>(pathname: string, filter?: string, limit?: number) {
   return response.json() as Promise<T>;
 }
 
-async function fetchAllProgramsParameters() {
+async function fetchAllProgramsParameters(category: string) {
   return fetchApi<FetchProgramsParameters>(
     API_URL,
-    ["orderBy=views", "programType=movie,series"].join("&")
+    ["orderBy=views", "programType=" + category].join("&")
   );
 }
 
