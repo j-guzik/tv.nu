@@ -1,5 +1,6 @@
 import { TVProgram } from "../../models/models";
 import Program from "../Program/Program";
+import "./ProgramsList.scss";
 
 interface ProgramsListProps {
   programs: TVProgram[];
@@ -8,7 +9,7 @@ interface ProgramsListProps {
 const ProgramsList = ({ programs }: ProgramsListProps) => {
   console.log(programs);
   return (
-    <div>
+    <div className="programs-list">
       {programs.map((program) => (
         <Program program={program}></Program>
       ))}
