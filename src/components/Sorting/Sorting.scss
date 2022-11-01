@@ -1,0 +1,23 @@
+.sorting-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px;
+  .sorting-header {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .select-sorting {
+    width: 110px;
+    align-self: center;
+    color: black;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 12px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 18%);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+}
