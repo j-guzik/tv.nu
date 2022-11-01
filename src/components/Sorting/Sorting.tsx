@@ -10,7 +10,7 @@ interface SortingListProps {
 }
 
 const Sorting = ({ programs, setPrograms }: SortingListProps) => {
-  const OPTIONS = ["no sorting", "ascending", "descending"];
+  const OPTIONS = ["No sorting", "Ascending", "Descending"];
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   useEffect(() => {

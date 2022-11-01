@@ -2,6 +2,7 @@ import { TVProgram } from "../../models/models";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Program.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Poster from "../Poster/Poster";
 
 interface ProgramProps {
   program: TVProgram;
@@ -43,9 +44,7 @@ const Program = ({ program }: ProgramProps) => {
           </div>
         </div>
       </div>
-      <div className="blur_back">
-        <img src={program.imageLandscape}></img>
-      </div>
+      <Poster imageLandscape={program.imageLandscape}></Poster>
     </div>
   );
 };

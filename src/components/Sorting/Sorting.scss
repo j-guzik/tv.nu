@@ -19,5 +19,9 @@
     box-shadow: 0 0 20px rgb(0 0 0 / 18%);
     transition: 200ms ease-in-out;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.04);
+      transition: transform 0.4s;
+    }
   }
 }

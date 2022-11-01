@@ -15,7 +15,6 @@ async function fetchApi<T>(pathname: string, filter?: string) {
   if (response.status >= 400) {
     throw new HttpError("Bad response", response.status);
   }
-
   return response.json() as Promise<T>;
 }
 

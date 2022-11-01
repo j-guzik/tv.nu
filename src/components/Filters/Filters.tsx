@@ -26,7 +26,7 @@ const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
               {category === "movie,series" ? (
                 <span>All</span>
               ) : (
-                <span>{category.toUpperCase()}</span>
+                <span>{category}</span>
               )}
             </button>
           ))}
