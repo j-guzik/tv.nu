@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Filters.scss";
 
 interface FiltersListProps {
@@ -11,25 +10,27 @@ const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
   console.log("cc", currentCategory);
 
   return (
-    <div className="filter">
+    <div className="filters">
       <div className="categories-container">
         <div className="categories-header">Categories:</div>
-        {CATEGORIES.map((category) => (
-          <button
-            className={`category ${
-              currentCategory === category ? "selected" : ""
-            }`}
-            onClick={() => {
-              updateCategory(category);
-            }}
-          >
-            {category === "movie,series" ? (
-              <span>All</span>
-            ) : (
-              <span>{category.toUpperCase()}</span>
-            )}
-          </button>
-        ))}
+        <div className="categories">
+          {CATEGORIES.map((category) => (
+            <button
+              className={`category ${
+                currentCategory === category ? "selected" : ""
+              }`}
+              onClick={() => {
+                updateCategory(category);
+              }}
+            >
+              {category === "movie,series" ? (
+                <span>All</span>
+              ) : (
+                <span>{category.toUpperCase()}</span>
+              )}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

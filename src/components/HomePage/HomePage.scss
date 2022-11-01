@@ -1,4 +1,14 @@
-.container {
-  display: flex;
-  justify-content: space-evenly;
+.main-container {
+  background-color: #eff0f3;
+  .layout-wrapper {
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #eff0f3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

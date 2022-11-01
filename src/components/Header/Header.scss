@@ -1,0 +1,21 @@
+.header-container {
+  background-color: #323740;
+  height: 75px;
+
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: top 0.15s ease-in-out;
+  .logo-container {
+    .logo {
+      background-image: url(https://www.tv.nu/dist/images/logo-header.jNG5G.png);
+      background-repeat: no-repeat;
+      background-size: 106px;
+      width: 106px;
+      height: 30px;
+      padding-bottom: 5px;
+    }
+  }
+}

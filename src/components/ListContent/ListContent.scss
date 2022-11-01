@@ -1,0 +1,19 @@
+.list-wrapper {
+  display: flex;
+  background-color: white;
+  min-height: 100vh;
+  .features-container {
+    margin: 40px;
+    padding: 0 7px;
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #e5e6e6;
+      width: 200px;
+      border-radius: 14px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+  }
+}
