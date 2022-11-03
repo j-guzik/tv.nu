@@ -16,6 +16,7 @@ const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
         <div className="categories">
           {CATEGORIES.map((category) => (
             <button
+              key={category}
               className={`category ${
                 currentCategory === category ? "selected" : ""
               }`}
@@ -26,7 +27,7 @@ const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
               {category === "movie,series" ? (
                 <span>All</span>
               ) : (
-                <span>{category.toUpperCase()}</span>
+                <span>{category}</span>
               )}
             </button>
           ))}

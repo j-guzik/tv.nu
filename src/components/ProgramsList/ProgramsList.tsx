@@ -11,7 +11,7 @@ const ProgramsList = ({ programs }: ProgramsListProps) => {
   return (
     <div className="programs-list">
       {programs.map((program) => (
-        <Program program={program}></Program>
+        <Program key={program.id} program={program}></Program>
       ))}
     </div>
   );
