@@ -14,7 +14,6 @@ const Sorting = ({ programs, setPrograms }: SortingListProps) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   useEffect(() => {
-    console.log("selectedOption", selectedOption);
     if (selectedOption === OPTIONS[1]) {
       setPrograms(sortProgramsByOrder(programs, "asc"));
     } else if (selectedOption === OPTIONS[2]) {

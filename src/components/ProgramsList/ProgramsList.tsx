@@ -7,7 +7,6 @@ interface ProgramsListProps {
 }
 
 const ProgramsList = ({ programs }: ProgramsListProps) => {
-  console.log(programs);
   return (
     <div className="programs-list">
       {programs.map((program) => (
