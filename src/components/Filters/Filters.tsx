@@ -7,8 +7,6 @@ interface FiltersListProps {
 
 const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
   const CATEGORIES = ["movie,series", "movie", "series"];
-  console.log("cc", currentCategory);
-
   return (
     <div className="filters">
       <div className="categories-container">
