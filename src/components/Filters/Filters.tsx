@@ -16,6 +16,7 @@ const Filters = ({ updateCategory, currentCategory }: FiltersListProps) => {
         <div className="categories">
           {CATEGORIES.map((category) => (
             <button
+              key={category}
               className={`category ${
                 currentCategory === category ? "selected" : ""
               }`}

@@ -10,37 +10,45 @@ interface ProgramProps {
 
 const Program = ({ program }: ProgramProps) => {
   return (
-    <div className="program_card">
-      <div className="info_section">
-        <div className="movie_header">
-          <h1 className="title">{program.title}</h1>
-          <p className="genres">
-            {program.genres
-              .filter((val, id, array) => array.indexOf(val) == id)
-              .map((genre) => (
-                <span className="genre">{genre}</span>
-              ))}
-          </p>
-        </div>
-        <div className="programProviders">
-          {program.playProviders.length > 0 ? (
-            program.playProviders.map((playerProvider) => (
-              <span className="programProvider">{playerProvider.name}</span>
-            ))
-          ) : (
-            <p className="provider-available">Streaming not available</p>
-          )}
-        </div>
-        <div className="rating">
-          <div className="star">
-            <FontAwesomeIcon icon={faStar} />
+    <div className="program-card">
+      <div className="info-section">
+        <div className="info-container">
+          <div className="movie-header">
+            <h1 className="title">{program.title}</h1>
+            <p className="genres">
+              {program.genres
+                .filter((val, id, array) => array.indexOf(val) == id)
+                .map((genre) => (
+                  <span key={genre} className="genre">
+                    {genre}
+                  </span>
+                ))}
+            </p>
           </div>
-          <div>
-            {program.imdb ? (
-              program.imdb.rating
-            ) : (
-              <p className="available">Not available</p>
-            )}
+          <div className="movie-bottom">
+            <div className="program-providers">
+              {program.playProviders.length > 0 ? (
+                program.playProviders.map((playerProvider) => (
+                  <span key={playerProvider.name} className="program-provider">
+                    {playerProvider.name}
+                  </span>
+                ))
+              ) : (
+                <p className="provider-noAvailable">Streaming not available</p>
+              )}
+            </div>
+            <div className="rating">
+              <div className="star">
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <div>
+                {program.imdb ? (
+                  program.imdb.rating
+                ) : (
+                  <p className="available">Not available</p>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

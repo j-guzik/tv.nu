@@ -17,3 +17,25 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .list-wrapper {
+    flex-direction: column;
+    padding-top: 60px;
+    .features-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .features {
+        width: 645px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .features {
+    position: sticky;
+    top: 40px;
+  }
+}

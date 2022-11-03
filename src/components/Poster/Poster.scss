@@ -132,11 +132,23 @@
 @media screen and (max-width: 768px) {
   .img-container {
     width: 100%;
+    .spinner {
+      top: 30%;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .img-container {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-container {
+    height: 60%;
+    .spinner {
+      top: 45%;
+    }
   }
 }

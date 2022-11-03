@@ -14,10 +14,11 @@ const Sorting = ({ programs, setPrograms }: SortingListProps) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   useEffect(() => {
+    console.log("selectedOption", selectedOption);
     if (selectedOption === OPTIONS[1]) {
-      setPrograms(sortProgramsByOrder(programs, "desc"));
-    } else if (selectedOption === OPTIONS[2]) {
       setPrograms(sortProgramsByOrder(programs, "asc"));
+    } else if (selectedOption === OPTIONS[2]) {
+      setPrograms(sortProgramsByOrder(programs, "desc"));
     } else {
       setPrograms(programs);
     }
@@ -36,11 +37,7 @@ const Sorting = ({ programs, setPrograms }: SortingListProps) => {
         className="select-sorting"
       >
         {OPTIONS.map((option) => (
-          <option
-            key={option}
-            value={option}
-            selected={option === selectedOption}
-          >
+          <option key={option} value={option}>
             {option}
           </option>
         ))}
