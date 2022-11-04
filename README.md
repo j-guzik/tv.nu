@@ -10,7 +10,7 @@
 ## Basic information
 
 This is an application that contains a movie catalog. The project was created in React using the API from https://stage-api-frontend.tv.nu/programs. Data is displayed on screen as a list of 15 programs. The list of programs includes title, image, genres, streaming services and imdb rating for each program. The site is responsive and looks good on a variety of devices.
-The user has the ability to filter programs by their type (movie, series or both) and sort programs by imdb rating. If a rating for a given program is not available and the user sorts the list of programs, the program with the unavailable rating will move to the bottom of the list regardless of the sorting direction.
+The user has the ability to filter programs by their type (movie, series or both) and sort programs by imdb rating. If a rating for a given program is not available and the user sorts the list of programs, the program with the unavailable rating will move to the bottom of the list regardless of the sorting direction. The application has a loading animation that displays when the image is not yet loaded.
 
 ## Possible directions of development
 
