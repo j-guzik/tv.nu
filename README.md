@@ -45,4 +45,4 @@ $ npm test
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
-![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)
+![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)
