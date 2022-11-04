@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { TVProgram } from "../models/models";
+import { TVProgram } from "../models/types";
 
 export const sortProgramsByOrder = (
   programs: TVProgram[],

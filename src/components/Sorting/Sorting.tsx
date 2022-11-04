@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { ChangeEvent, useEffect, useState } from "react";
 import { sortProgramsByOrder } from "../../helpers/helpers";
-import { TVProgram } from "../../models/models";
+import { TVProgram } from "../../models/types";
 import "./Sorting.scss";
 
 interface SortingListProps {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TVProgram } from "../../models/models";
+import { TVProgram } from "../../models/types";
 import "./Poster.scss";
 
 interface ImageProps {
