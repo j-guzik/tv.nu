@@ -1,4 +1,4 @@
-import { TVProgram } from "../../models/models";
+import { TVProgram } from "../../models/types";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Program.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

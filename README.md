@@ -16,8 +16,7 @@ The user has the ability to filter programs by their type (movie, series or both
 
 A possible improvement would be to display the logos of streaming platforms instead of their names. When a user clicks on a particular logo it would redirect them to the provider's page with the specific video.
 It would also be nice to display the rating on a star scale instead of a number.
-In order to improve the solution, it would be good to perform tests, but I didn't have enough time for that.
-I am familiar with two frameworks for testing: Jest and Cypress.
+In order to improve the solution, it would be good to perform more tests. I made sample tests to check, for example, if the sorting works properly. I wanted to show that they should be created when we building the application, but I didn't have enough time to test everything. I am familiar with two frameworks for testing: Jest and Cypress.
 
 As for further development of the application, it would make sense to create the ability to filter by other data like genre. The program area could be clickable and display the shortcut of a given program and other detailed information. It would be a good idea to create accounts for users and the possibility of their own evaluation of the program, as well as enable commenting and discussion.
 

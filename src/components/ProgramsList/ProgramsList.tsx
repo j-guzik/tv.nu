@@ -1,4 +1,4 @@
-import { TVProgram } from "../../models/models";
+import { TVProgram } from "../../models/types";
 import Program from "../Program/Program";
 import "./ProgramsList.scss";
 

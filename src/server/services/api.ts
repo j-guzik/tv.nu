@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import { HttpError } from "../utils/HttpError";
 import { NotFoundError } from "../utils/NotFound";
-import { FetchProgramsParameters } from "../../models/models";
+import { FetchProgramsParameters } from "../../models/types";
 
 const API_URL = "https://stage-api-frontend.tv.nu/programs?";
 

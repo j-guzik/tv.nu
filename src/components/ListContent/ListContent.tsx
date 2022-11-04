@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getAllPrograms } from "../../helpers/getData";
-import { TVProgram } from "../../models/models";
+import { TVProgram } from "../../models/types";
 import Filters from "../Filters/Filters";
 import ProgramsList from "../ProgramsList/ProgramsList";
 import Sorting from "../Sorting/Sorting";

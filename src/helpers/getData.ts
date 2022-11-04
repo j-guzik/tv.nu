@@ -1,4 +1,4 @@
-import { TVProgram } from "../models/models";
+import { TVProgram } from "../models/types";
 import { fetchAllProgramsParameters } from "../server/services/api";
 
 export const getAllPrograms = async (category: string) => {
